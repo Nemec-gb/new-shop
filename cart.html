@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Registration</title>
-    <link rel="stylesheet" href="css/registration.css">
+    <title>Cart</title>
+    <link rel="stylesheet" href="css/cart.css">
 </head>
 
 <body>
@@ -73,56 +73,57 @@
         </div>
     </header>
     <main class="white__back container">
-        <div class="registration__header container">
-            <span>registration</span>
+
+        <div class="cart__header container">
+            <span>shopping cart</span>
         </div>
 
+        <div class="card__column ">
+            <div class="cart__card">
+                <img class="cart__card-img" height="188" src="img/product-card3.png">
+                <div>
+                    <h2>mango people t-shirt</h2>
+                    <img class="cart__card-close" src="img/close.svg">
+                    <p>Price: <span>$300</span></p>
+                    <p>Color: Red</p>
+                    <p>Size: Xl</p>
+                    <p>Quantity: <input type="text" placeholder="2"> </p>
+                </div>
+            </div>
 
-        <form class="form" action="">
-            <h4>Your Name</h4>
-            <input type="text" name="firstname" placeholder="First Name">
-            <input type="text" name="lastname" placeholder="Last Name">
+            <div class="cart__card">
+                <img class="cart__card-img" height="188" src="img/product-card12.png">
+                <div>
+                    <h2>mango people t-shirt</h2>
+                    <img class="cart__card-close" src="img/close.svg">
+                    <p>Price: <span>$300</span></p>
+                    <p>Color: Red</p>
+                    <p>Size: Xl</p>
+                    <p>Quantity: <input type="text" placeholder="2"> </p>
+                </div>
+            </div>
+            <div class="card__column-btnblock">
+                <button type="button" class="product__button" href="#">clear shopping cart</button>
+                <a class="product__button" href="catalog.html">continue shopping</a>
+            </div>
+        </div>
 
-            <label class="radio__group" for="pol">
-                <input name="pol" class="radio" type="radio" id="male" value="male">
-
-                <label for="male">
-                    <h4>Male</h4>
-                </label>
-
-
-                <input name="pol" class="radio" type="radio" id="female" value="famale">
-                <label for="female">
-                    <h4>Female</h4>
-                </label>
-            </label>
-
-            <h4>Login details</h4>
-            <input type="email" placeholder="E-mail">
-            <input type="password" placeholder="Password">
-            <h5>Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters
-            </h5>
-
-
-            <button type="button" class="button join-now">
-                <span>join now</span><img src="img/reg_button.png">
-            </button>
-
+        <form class="form">
+            <div class="form__text">
+                <h3>SHIPPING ADRESS</h3>
+                <input type="text" placeholder="Bangladesh">
+                <input type="text" placeholder="State">
+                <input type="text" placeholder="Postcode / Zip">
+                <button type="button" class="product__button form__get">get a quote</button>
+            </div>
+            <div class="form__checkout">
+                <h3>sub total <span>$900</span></h3>
+                <h4>grand total <span>$900</span></h4>
+                <div class="form__checkout-line"></div>
+                <button type="submit" class="product__button button__proceed" type="submit">proceed to checkout</button>
+            </div>
         </form>
 
-        <section class="loyalty">
-            <h1>loyalty has its perks</h1>
-            <p> Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these
-                as soon as you join:</p>
-            <ul>
-                <li>15% off welcome offer</li>
-                <li>Free shipping, returns and exchanges on all orders</li>
-                <li>$10 off a purchase on your birthday</li>
-                <li>Early access to products</li>
-                <li>Exclusive offers & rewards</li>
-
-            </ul>
-        </section>
     </main>
     <footer class="footer  container">
 
@@ -184,8 +185,6 @@
             </ul>
         </section>
     </footer>
-
-
     <script src="js/menu.js"></script>
 </body>
 
